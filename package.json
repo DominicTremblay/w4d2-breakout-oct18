@@ -9,6 +9,7 @@
   "author": "Dominic Tremblay",
   "license": "ISC",
   "dependencies": {
+    "faker": "^4.1.0",
     "knex": "^0.15.2",
     "pg": "^7.5.0"
   }

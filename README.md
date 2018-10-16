@@ -106,26 +106,28 @@ Look up the Schema Builder in the documentation:
 
 - create multiple tables in 1 migration file with Promise.all
 
+```
 exports.up = function(knex, Promise) {
-return Promise.all([
-knex.schema.createTable("posts", table => {
-...
-}),
-knex.schema.createTable("comments", table => {
-...
-}),
-knex.schema.createTable("likes", table => {
-...
-])
+  return Promise.all([
+    knex.schema.createTable("posts", table => {
+    ...
+    }),
+    knex.schema.createTable("comments", table => {
+    ...
+    }),
+    knex.schema.createTable("likes", table => {
+    ...
+  ])
 };
 
 exports.down = function(knex, Promise) {
-return Promise.all([
-knex.schema.dropTable('likes'),
-knex.schema.dropTable('comments'),
-knex.schema.dropTable('posts'),
-])
+  return Promise.all([
+    knex.schema.dropTable('likes'),
+    knex.schema.dropTable('comments'),
+    knex.schema.dropTable('posts'),
+  ])
 };
+```
 
 ### Adding a foreign keys
 
