@@ -1,0 +1,11 @@
+{
+  "name": "w4d2-breakout-knex",
+  "version": "1.0.0",
+  "description": "Breakout session about how to use knex",
+  "main": "servers.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dominic Tremblay",
+  "license": "ISC"
+}
