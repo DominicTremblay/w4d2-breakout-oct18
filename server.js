@@ -9,7 +9,7 @@ knex
   .from("players")
   .innerJoin("game_details", "game_details.player_id", "players.id")
   .innerJoin("games", "game_details.game_id", "games.id")
-  .where("games.name", "card")
+  .where("games.name", "matrix")
   .then(function(result) {
     console.log(result);
   })
